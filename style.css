@@ -1,0 +1,186 @@
+body {
+  color: #131D4F;
+  background: #fff;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.location {
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 18px 0 0 0;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.contact-row i {
+  margin-right: 8px;
+}
+
+.profile-pic-container {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  margin: 0;
+  z-index: 10;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  background: #eee;
+  border: 2px solid #131D4F;
+}
+
+.resume-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #131D4F;
+  padding-bottom: 2px;
+  letter-spacing: 0.02em;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.edu-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.edu-detail {
+  font-size: 1.1rem;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.edu-date {
+  text-align: right;
+  min-width: 220px;
+}
+
+.edu-date b {
+  font-size: 1.1rem;
+}
+
+.edu-location {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 1.15rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.tech {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.project-date {
+  float: right;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0 0 10px 0;
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 7px;
+  font-size: 1.08rem;
+}
+
+.extracurricular {
+  margin-bottom: 20px;
+}
+
+.extracurricular-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.external-link {
+  color: #131D4F;
+  font-size: 1rem;
+}
+
+.extracurricular-role {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.extracurricular-date-location {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.extracurricular-list {
+  list-style-type: '\2737  '; /* Unicode for asterisk */
+  padding-left: 24px;
+}
+
+@media (max-width: 900px) {
+  .resume-content {
+    padding: 0 8px 20px 8px;
+  }
+  .edu-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .edu-date {
+    text-align: left;
+    min-width: unset;
+    margin-top: 2px;
+  }
+  .profile-pic {
+    height: 120px;
+    width: 120px;
+  }
+}
